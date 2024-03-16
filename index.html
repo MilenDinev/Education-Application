@@ -574,14 +574,15 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/lightbox.js"></script>
-  <script src="assets/js/tabs.js"></script>
+
   <script src="assets/js/video.js"></script>
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
+
   <script>
     //according to loftblog tut
     $('.nav li:first').addClass('active');
@@ -681,6 +682,37 @@
     });
 
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.getElementById('tabs');
+    const tabLinks = tabs.querySelectorAll('ul li a');
+    const tabContents = tabs.querySelectorAll('.tabs-content article');
+
+    // Add click event listeners to tab links
+    tabLinks.forEach(function(tabLink, index) {
+      tabLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        // Remove 'active' class from all tab links and tab contents
+        tabLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        tabContents.forEach(function(content) {
+          content.style.display = 'none';
+        });
+        // Add 'active' class to clicked tab link and display corresponding tab content
+        tabLink.classList.add('active');
+        const targetId = tabLink.getAttribute('href').substring(1);
+        document.getElementById(targetId).style.display = 'block';
+      });
+    });
+
+    // Show the first tab by default
+    tabLinks[0].click();
+  });
+</script>
+
+
 </body>
 
 </html>
