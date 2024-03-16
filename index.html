@@ -41,13 +41,13 @@
         <li class="has-submenu"><a href="#">За Нас</a>
           <ul class="sub-menu">
             <li><a href="#section2">Екип</a></li>
-            <li><a href="#section8">Цени</a></li>
+            <li><a href="#prices">Цени</a></li>
             <li><a href="#section6">Пишете ни</a></li>
           </ul>
         </li>
         <li><a href="#section5">Програмата</a></li>
-        <li><a href="#section8">Общи Условия</a></li>
-        <li><a href="#section8">Контакти</a></li>
+        <li><a href="#commons">Общи Условия</a></li>
+        <li><a href="#contacts-2">Контакти</a></li>
       </ul>
     </nav>
   </header>
@@ -333,7 +333,7 @@
   <section class="section video" style="background-image: url('./assets/images/video-bg.jpg');" data-section="section8">
     <div class="container d-flex justify-content-center">
       <div class="row">
-        <div class="col-md-6 d-flex">
+        <div class="col-md-6 d-flex" id="prices">
 
           <div class="row left-content d-flex justify-content-center">
             <div>
@@ -379,7 +379,7 @@
                 </div>
               </div>
 
-              <div>
+              <div id="contacts-2">
                 <h4 class="text-center"><em>Контакти:</em></h4>
                 <div class="row text-center row left-content d-flex justify-content-center">
                   <ul class="text-center">
@@ -436,7 +436,7 @@
         </div>
 
 
-        <div class="col-md-6 align-self-center">
+        <div class="col-md-6 align-self-center" id="commons">
           <div class="left-content">
             <h4 class="text-center"><em>ОБЩИ УСЛОВИЯ</em></h4>
             <ul class="text center">
@@ -672,8 +672,50 @@
         var contactSection = document.getElementById('contact');
         contactSection.scrollIntoView({ behavior: 'smooth' });
       });
+      
 
     });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var contactLink = document.querySelector('a[href="#prices"]');
+
+      contactLink.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var contactSection = document.getElementById('prices');
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      });
+      
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var contactLink = document.querySelector('a[href="#commons"]');
+
+      contactLink.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var contactSection = document.getElementById('commons');
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      });
+      
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var contactLink = document.querySelector('a[href="#contacts-2"]');
+
+      contactLink.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var contactSection = document.getElementById('contacts-2');
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      });
+      
+
+    });
+
 
   </script>
 
