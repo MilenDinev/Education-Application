@@ -979,6 +979,10 @@ section.video .left-content .main-button {
   margin: 0px auto 0;
 }
 
+.single-line {
+  white-space: nowrap; /* Prevents wrapping */
+}
+
 @media screen and (max-width: 767px) {
 
   section.video .left-content {
