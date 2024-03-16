@@ -490,7 +490,7 @@ section.features .col-4 {
 /* Why Choosing Us */
 
 section.why-us {
-    background-image: url(../images/choosing-bg.jpg);
+    background-image: url(../images/main-slider-01.jpg);
     background-color: #172238;
     background-repeat: no-repeat;
     background-size: cover;
@@ -869,12 +869,46 @@ section.courses .owl-carousel button.active {
 
 
 
+section.prices {
+  background-image: url(../images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #172238;
+  padding: 120px 0px;
+}
 
+section.prices .left-content {
+color: #fff;
+}
+
+section.prices .left-content span {
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 0.5px;
+}
+
+section.prices .left-content h4 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+section.prices .left-content h4 em {
+  font-style: normal;
+  color: #f5a425;
+}
+
+section.prices .left-content .main-button {
+margin-top: 30px;
+}
 
 /* Video */
 
 section.video {
-    background-image: url(../images/contact-bg.jpg);
+    background-image: url(../images/main-slider-03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
