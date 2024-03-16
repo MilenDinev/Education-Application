@@ -311,7 +311,7 @@ a.menu-link { display: none; }
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(22,34,57,0.85);
+    background-color: rgba(54, 66, 87, 0.514);
     top: 0;
     left: 0;
     bottom: 7px;
@@ -618,19 +618,10 @@ section.why-us {
 }
 
 
+
+
 /* Coming Soon */
 
-section.coming-soon {
-    background-image: url(../images/coming-soon-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #172238;
-    padding: 120px 0px;
-}
-
-section.coming-soon .continer .counter div {
-  display: inline-block;
-}
 section.coming-soon .continer h4 {
     margin-top: 100px;
     font-size: 30px;
