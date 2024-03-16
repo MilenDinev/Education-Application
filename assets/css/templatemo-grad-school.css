@@ -490,7 +490,7 @@ section.features .col-4 {
 /* Why Choosing Us */
 
 section.why-us {
-    background-image: url(../images/main-slider-01.jpg);
+    background-image: url(../images/choosing-bg.jpg);
     background-color: #172238;
     background-repeat: no-repeat;
     background-size: cover;
@@ -616,6 +616,8 @@ section.why-us {
   }
 
 }
+
+
 
 
 /* Coming Soon */
@@ -868,10 +870,13 @@ section.courses .owl-carousel button.active {
 }
 
 
+
+
+
 /* Video */
 
 section.video {
-    background-image: url(../images/main-slider-03.jpg);
+    background-image: url(../images/video-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
