@@ -2,24 +2,23 @@
 /* VIDEO POPUP FUNCTION */
 /* ========================================================================= */
 function videoPopup() {
-    $('.play').each(function() {
-        var link = $(this).attr('src');
-        $(this).magnificPopup({
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: true,
-            iframe: {
-                patterns: {
-                    youtube: {
-                        src: link
-                    }
+    var play = $('.play'),
+        link = $(play).attr('src');
+    $(play).magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: true,
+        iframe: {
+            patterns: {
+                youtube: {
+                    src: link
                 }
             }
-        });
+        }
     });
-}
+ }
 /*! Magnific Popup - v1.1.0 - 2016-02-20
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2016 Dmitry Semenov; */
