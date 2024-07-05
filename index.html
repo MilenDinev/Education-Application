@@ -643,9 +643,9 @@
 
   <script>
     function calculateTimeRemaining() {
-      const endDate = new Date("2024-06-03");
+      //const endDate = new Date("2024-06-03");
       const now = new Date();
-      const timeRemaining = endDate - now;
+      const timeRemaining = now;
 
       const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
       const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
